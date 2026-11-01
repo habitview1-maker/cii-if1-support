@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CII IF1 Exam Prep — Support, Privacy Policy & Terms of Use</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+            --tag-bg: #e0f2fe;
+            --tag-text: #0369a1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 4rem 1.5rem 3rem;
+            text-align: center;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(2, 132, 199, 0.2);
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background: white;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0.75rem 1rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+            background: var(--tag-bg);
+        }
+
+        main {
+            max-width: 860px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-tag {
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            color: var(--text-main);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.75rem 0 0.75rem;
+            color: var(--text-main);
+        }
+
+        p, ul {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .support-card {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 12px;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .support-card strong {
+            display: block;
+            color: #0369a1;
+            font-size: 1.1rem;
+        }
+
+        .support-card span {
+            color: #0c4a6e;
+            font-size: 0.9rem;
+        }
+
+        .btn-email {
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+
+        .btn-email:hover {
+            background: var(--primary-dark);
+        }
+
+        .faq-item {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq-item p:first-child {
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            h1 { font-size: 1.85rem; }
+            section { padding: 1.5rem; }
+            .support-card { flex-direction: column; align-items: flex-start; }
+            .btn-email { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <span class="badge">UK Insurance Certification</span>
+            <h1>CII IF1 Exam Prep</h1>
+            <p>Official Support Center, Privacy Policy & Terms of Use (EULA)</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#support">Support & FAQ</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Use (EULA)</a>
+    </nav>
+
+    <main>
+        <!-- SUPPORT & FAQ -->
+        <section id="support">
+            <span class="section-tag">Support & Help</span>
+            <h2>Need Assistance with CII IF1 Exam Prep?</h2>
+            <p>CII IF1 Exam Prep is engineered to help insurance professionals and students master the <strong>Insurance Legal and Regulatory (IF1)</strong> exam syllabus. Whether you have questions regarding study modules, content feedback, or managing your in-app purchase, our support team is here to help.</p>
+
+            <div class="support-card">
+                <div>
+                    <strong>Direct Email Support</strong>
+                    <span>Typical response time: Within 24 hours on business days</span>
+                </div>
+                <a href="mailto:habitview1@gmail.com?subject=CII%20IF1%20Exam%20Prep%20Support" class="btn-email">
+                    ✉️ habitview1@gmail.com
+                </a>
+            </div>
+
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            
+            <div class="faq-item">
+                <p>1. How do I restore my purchases on a new iPhone or iPad?</p>
+                <p>Open the app, navigate to <strong>Settings</strong> (or tap on the Premium screen), and tap <strong>"Restore Purchases"</strong>. Ensure you are signed in with the same Apple ID originally used for the transaction.</p>
+            </div>
+
+            <div class="faq-item">
+                <p>2. How do I manage or cancel an active subscription?</p>
+                <p>All in-app subscriptions and payments are handled directly by Apple. On your iOS device, go to <strong>Settings > [Your Name] > Subscriptions</strong>, tap <strong>CII IF1 Exam Prep</strong>, and choose to cancel or modify your plan at least 24 hours prior to the renewal date.</p>
+            </div>
+
+            <div class="faq-item">
+                <p>3. Does the app work offline?</p>
+                <p>Yes. All mock questions, legal explanations, and your personal performance analytics are stored locally and encrypted on your device. You can study anywhere without an internet connection.</p>
+            </div>
+        </section>
+
+        <!-- PRIVACY POLICY -->
+        <section id="privacy">
+            <span class="section-tag">Data Protection & Privacy</span>
+            <h2>Privacy Policy</h2>
+            <p><strong>Last Updated:</strong> November 1, 2026</p>
+            <p>At <strong>CII IF1 Exam Prep</strong>, we prioritize your privacy. Our application is built from the ground up on an <em>Offline-First</em> and <em>Privacy-by-Design</em> philosophy. You do not need to register an account, and we do not collect personal identifiers such as your name, phone number, or physical address.</p>
+
+            <h3>1. What Data Is Processed?</h3>
+            <ul>
+                <li><strong>Local Progress & Analytics:</strong> Your quiz scores, practice exam completion logs, and bookmarked questions are stored strictly on your local device using Apple's <code>UserDefaults</code> storage.</li>
+                <li><strong>No Server Collection:</strong> We do not operate external database servers or analytics trackers (such as Google Analytics or Firebase). Your progress never leaves your device.</li>
+                <li><strong>No Advertising or Tracking:</strong> The app contains zero advertising frameworks, does not monitor your activity across third-party websites, and never sells your data.</li>
+            </ul>
+
+            <h3>2. In-App Purchases (Apple StoreKit)</h3>
+            <p>All financial transactions are conducted exclusively via Apple's secure App Store infrastructure (StoreKit). The developer has no access to your banking, payment card details, or billing information.</p>
+
+            <h3>3. Managing and Deleting Data</h3>
+            <p>Because your study data is stored entirely on your device, you have total control. You can reset your test history in the app settings or delete all local data by uninstalling the application from your device.</p>
+
+            <h3>4. Privacy Contact</h3>
+            <p>If you have questions regarding this Privacy Policy, please email the developer at <a href="mailto:habitview1@gmail.com">habitview1@gmail.com</a>.</p>
+        </section>
+
+        <!-- TERMS OF USE -->
+        <section id="terms">
+            <span class="section-tag">Licensing & Terms</span>
+            <h2>Terms of Use (EULA)</h2>
+            <p><strong>Last Updated:</strong> November 1, 2026</p>
+            <p>By downloading or using <strong>CII IF1 Exam Prep</strong>, you agree to these Terms of Use and Apple’s standard <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Licensed Application End User License Agreement (Standard EULA)</a>.</p>
+
+            <h3>1. Premium Access & Purchases</h3>
+            <p>Introductory practice questions are provided free of charge to evaluate the application. Unlocking full access to all syllabus units, complete timed mock exams, and in-depth answer explanations requires an in-app purchase or active subscription as displayed within the app.</p>
+            <p>Current pricing and available access tiers (such as auto-renewing subscriptions or lifetime access options) are clearly displayed within the application and on the App Store product page prior to confirmation of purchase.</p>
+
+            <h3>2. Subscription Renewal Terms</h3>
+            <ul>
+                <li>Payment is charged to your Apple ID account upon purchase confirmation.</li>
+                <li>Subscriptions automatically renew unless cancelled at least <strong>24 hours before the end of the current billing cycle</strong>.</li>
+                <li>Your account will be charged for renewal within 24 hours prior to the end of the period at the standard package rate shown in the app.</li>
+                <li>You can manage or cancel your auto-renewal settings at any time in your <strong>App Store Account Settings</strong>.</li>
+            </ul>
+
+            <h3>3. Educational Disclaimer & Legal Notice</h3>
+            <p><strong>CII IF1 Exam Prep</strong> is an independent educational training aid. It is not affiliated with, endorsed by, or sponsored by the <strong>Chartered Insurance Institute (CII)</strong>, the <strong>Financial Conduct Authority (FCA)</strong>, or the <strong>Prudential Regulation Authority (PRA)</strong>. Passing mock exams within this app does not guarantee a passing grade on the official CII qualification exam. All educational questions, content formulations, and code are intellectual property protected by copyright.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 CII IF1 Exam Prep. All rights reserved.</p>
+        <p>Support: <a href="mailto:habitview1@gmail.com">habitview1@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
